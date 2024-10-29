@@ -88,7 +88,7 @@ app.secret_key = os.urandom(24)
 # Set environment variables and constants
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-REDIRECT_URI = "https://subschecker.vercel.app/api/callback"
+REDIRECT_URI = "https://subschecker.vercel.app/api/login"
 CHANNEL_ID = "UCXnBZRpLD7QzcJsUKBF-cKw"  # Replace with your actual channel ID
 
 # Flask routes
