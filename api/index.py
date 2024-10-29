@@ -14,7 +14,7 @@ app.secret_key = os.urandom(24)
 
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-REDIRECT_URI = "https://your-vercel-domain.vercel.app/api/callback"
+REDIRECT_URI = "https://subschecker.vercel.app/api"
 CHANNEL_ID = "UCXnBZRpLD7QzcJsUKBF-cKw"  # Replace with your actual channel ID
 
 @app.route("/api/login")
