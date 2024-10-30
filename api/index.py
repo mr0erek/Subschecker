@@ -119,11 +119,11 @@ def callback():
 
     access_token = response.json().get("access_token")
     session["access_token"] = access_token
-    return redirect(url_for("check_subscription"))
+    return redirect(url_for("check_subscription", access_token=access_token))
 
 @app.route("/api/check-subscription")
 def check_subscription():
-    access_token = session.get("access_token")
+    access_token = request.args.get("access_token")
     if not access_token:
         return jsonify({"error": "Access token missing"}), 403
 
